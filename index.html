@@ -22,6 +22,8 @@
   <meta name="twitter:image" content="https://santuario-landing-page.vercel.app/assets/img/og-image.webp" />
 
   <link rel="canonical" href="https://santuario-landing-page.vercel.app/" />
+  <link rel="alternate" hreflang="es" href="https://santuario-landing-page.vercel.app/" />
+  <link rel="alternate" hreflang="x-default" href="https://santuario-landing-page.vercel.app/" />
 
   <!-- Preload hero poster -->
   <link rel="preload" href="assets/img/hero-bg.webp" as="image" fetchpriority="high" />
@@ -84,6 +86,15 @@
 <body>
 <a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;">Saltar al contenido</a>
 
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <span class="header-logo">✦ Santuario</span>
+    <a href="https://www.skool.com/santuario-de-bienestar-7743" target="_blank" rel="noopener" class="cta-btn cta-primary cta-header">
+      <span>Unirme Gratis</span>
+    </a>
+  </div>
+</header>
+
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg">
@@ -126,19 +137,19 @@
           <p>Millones de personas en Latinoamérica sienten exactamente lo mismo. Crecieron con una religión que no termina de conectar, o simplemente buscan algo más profundo que rituales vacíos.</p>
           <div class="pain-cards">
             <div class="pain-card">
-              <div class="pain-icon">😔</div>
+              <div class="pain-icon"><span role="img" aria-label="Sentirse desconectado">😔</span></div>
               <p>Te sientes desconectado, aunque tengas todo</p>
             </div>
             <div class="pain-card">
-              <div class="pain-icon">🔍</div>
+              <div class="pain-icon"><span role="img" aria-label="Buscar propósito">🔍</span></div>
               <p>Buscas propósito y respuestas que nadie te da</p>
             </div>
             <div class="pain-card">
-              <div class="pain-icon">🏛️</div>
+              <div class="pain-icon"><span role="img" aria-label="Religión que no llena">🏛️</span></div>
               <p>La religión heredada ya no te llena</p>
             </div>
             <div class="pain-card">
-              <div class="pain-icon">⚡</div>
+              <div class="pain-icon"><span role="img" aria-label="Querer sanar">⚡</span></div>
               <p>Quieres sanar pero no sabes por dónde empezar</p>
             </div>
           </div>
@@ -193,6 +204,24 @@
           <img src="assets/img/story-2.webp" alt="Miembro del Santuario en paz" loading="lazy" width="800" height="520" />
         </div>
       </div>
+      <div class="story-full">
+        <div class="story-full-text">
+          <div class="story-quote" aria-hidden="true">"</div>
+          <p>Siempre sentí que la iglesia no respondía mis preguntas. Cuando encontré el Santuario, descubrí que <strong>la espiritualidad puede ser personal, libre y profundamente transformadora</strong>. Los retos mensuales cambiaron mi rutina por completo.</p>
+          <div class="story-author">
+            <div class="story-avatar">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg, var(--gold-light), var(--gold));display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:white;">M</div>
+            </div>
+            <div>
+              <strong>María L.</strong>
+              <span>Buenos Aires, Argentina</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-full-image">
+          <div style="width:100%;height:100%;background:linear-gradient(135deg, var(--gold-lightest), var(--purple-lightest));"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -218,6 +247,7 @@
         <div class="what-is-badge">✦ La Comunidad</div>
         <h2>El Santuario de Bienestar</h2>
         <p class="what-is-subtitle">Una comunidad privada en Skool para personas de habla hispana que buscan reconectar con su esencia: alma, energía y consciencia — sin dogmas, sin juicios.</p>
+        <p class="what-is-detail">Fundado con la misión de crear el espacio espiritual en español que no existía, el Santuario combina sabiduría ancestral — Chakras, Arcángeles, Maestros Ascendidos y Rayos de Luz — con prácticas modernas de meditación, manifestación y trabajo energético. Nuestro Método Tríptico, "El Arte de Ver a Dios", guía a cada miembro a través de tres pilares: Experiencia, Energía y Ejecución, para lograr una transformación real y medible en su vida diaria.</p>
       </div>
     </div>
     <div class="pillars-section">
@@ -320,6 +350,19 @@
     </div>
   </section>
 
+  <!-- EMAIL OPT-IN -->
+  <section class="email-optin">
+    <div class="container" style="text-align:center;padding:80px 32px;">
+      <span class="section-label">Recurso Gratuito</span>
+      <h2 style="font-family:var(--font-serif);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--text-primary);margin-bottom:16px;">Recibe una meditación guiada gratis</h2>
+      <p style="font-family:var(--font-serif);font-size:1.1rem;font-style:italic;color:var(--text-body);max-width:500px;margin:0 auto 32px;line-height:1.7;">Una meditación de 10 minutos para reconectar con tu energía interior. Sin compromiso.</p>
+      <a href="https://www.skool.com/santuario-de-bienestar-7743" target="_blank" rel="noopener" class="cta-btn cta-primary">
+        <span>Quiero mi meditación gratis</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
   <!-- FOR WHO -->
   <section class="for-who">
     <div class="container">
@@ -352,13 +395,61 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="faq-header">
+        <span class="section-label">Preguntas Frecuentes</span>
+        <h2>Resolvemos tus dudas</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary><h3>¿Qué es el Santuario de Bienestar?</h3></summary>
+          <div class="faq-answer">
+            <p>El Santuario de Bienestar es una comunidad privada en español alojada en la plataforma Skool, diseñada para personas de habla hispana entre 25 y 45 años que buscan reconectar con su esencia espiritual. A diferencia de grupos religiosos tradicionales, el Santuario ofrece un espacio libre de dogmas donde exploramos temas como Chakras, Arcángeles, Maestros Ascendidos y Rayos de Luz desde una perspectiva práctica y respetuosa. Incluye contenido educativo exclusivo, meditaciones guiadas, retos mensuales de transformación y una comunidad activa que se apoya mutuamente en su camino de despertar espiritual.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><h3>¿Es una religión o secta?</h3></summary>
+          <div class="faq-answer">
+            <p>No. El Santuario de Bienestar no es una religión, secta ni organización dogmática. Es una comunidad educativa y de apoyo donde cada miembro explora la espiritualidad desde su propia experiencia. No hay líderes supremos, no pedimos diezmos, no hay obligaciones de asistencia. Respetamos todas las creencias y caminos. Nuestro enfoque es brindar herramientas prácticas — meditación, trabajo energético, introspección — para que cada persona encuentre su propia conexión con lo divino.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><h3>¿Realmente es gratis?</h3></summary>
+          <div class="faq-answer">
+            <p>Sí. Como miembro fundador, accedes a toda la comunidad sin costo. No necesitas tarjeta de crédito ni hay pagos ocultos. El acceso gratuito incluye el classroom con contenido educativo, los retos mensuales, las llamadas en vivo y la participación completa en la comunidad. Esta oferta es exclusiva para miembros fundadores y las plazas son limitadas.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><h3>¿Qué es Skool y cómo funciona?</h3></summary>
+          <div class="faq-answer">
+            <p>Skool es una plataforma de comunidades en línea que combina lo mejor de un foro, un aula virtual y un sistema de gamificación. Al unirte al Santuario en Skool, tendrás acceso a un feed de comunidad donde compartir con otros miembros, un classroom con módulos educativos organizados, un calendario de eventos en vivo, y un sistema de niveles donde desbloqueas contenido especial al participar activamente.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><h3>¿Qué es el Método Tríptico?</h3></summary>
+          <div class="faq-answer">
+            <p>El Método Tríptico es nuestro sistema exclusivo llamado "El Arte de Ver a Dios". Es un marco de tres pilares — Experiencia, Energía y Ejecución — diseñado para guiarte en un proceso de reconexión espiritual profunda. A través de la Experiencia accedes a conocimiento ancestral adaptado al mundo moderno; con la Energía trabajas prácticas de meditación, yoga y sanación; y con la Ejecución aplicas todo mediante retos concretos que transforman tu vida diaria.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><h3>¿Necesito experiencia previa en espiritualidad?</h3></summary>
+          <div class="faq-answer">
+            <p>No necesitas ninguna experiencia previa. El Santuario está diseñado tanto para personas que nunca han explorado la espiritualidad como para quienes ya tienen un camino recorrido. El contenido está organizado desde lo básico hasta lo avanzado, y la comunidad es un espacio seguro donde todas las preguntas son bienvenidas sin importar tu nivel.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- BLOG -->
   <section class="blog">
     <div class="container">
       <span class="section-label centered">Artículos recientes</span>
       <h2 class="centered">Artículos para tu Camino</h2>
       <div class="blog-grid">
-        <a href="#" class="blog-card">
+        <a href="https://www.skool.com/santuario-de-bienestar-7743" class="blog-card">
           <div class="blog-img">
             <img src="assets/img/blog-1.webp" alt="5 Señales de que tu Alma Está Lista para Despertar" loading="lazy" width="400" height="225">
           </div>
@@ -369,7 +460,7 @@
             <span class="blog-link">Leer más →</span>
           </div>
         </a>
-        <a href="#" class="blog-card">
+        <a href="https://www.skool.com/santuario-de-bienestar-7743" class="blog-card">
           <div class="blog-img">
             <img src="assets/img/blog-2.webp" alt="Chakras: La Guía Completa para Principiantes" loading="lazy" width="400" height="225">
           </div>
@@ -380,7 +471,7 @@
             <span class="blog-link">Leer más →</span>
           </div>
         </a>
-        <a href="#" class="blog-card">
+        <a href="https://www.skool.com/santuario-de-bienestar-7743" class="blog-card">
           <div class="blog-img">
             <img src="assets/img/blog-3.webp" alt="Cómo la Meditación Transformó la Vida de Nuestros Miembros" loading="lazy" width="400" height="225">
           </div>
@@ -425,6 +516,11 @@
     <div class="container">
       <p>© 2026 Santuario de Bienestar · Todos los derechos reservados</p>
       <p class="footer-sub">Esta página fue creada con amor para aquellos que están listos para despertar.</p>
+      <p class="footer-legal" style="margin-top:16px;font-size:0.65rem;color:var(--text-muted);">
+        <a href="#" style="color:var(--text-muted);text-decoration:underline;">Política de Privacidad</a> ·
+        <a href="#" style="color:var(--text-muted);text-decoration:underline;">Términos de Uso</a> ·
+        <a href="mailto:contacto@santuariodebienestar.com" style="color:var(--text-muted);text-decoration:underline;">Contacto</a>
+      </p>
     </div>
   </footer>
 

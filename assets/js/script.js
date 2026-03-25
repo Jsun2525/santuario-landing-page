@@ -22,7 +22,7 @@
 // ============ SCROLL REVEAL ============
 (function initReveal() {
     const sections = document.querySelectorAll(
-        '.split-content-inner, .pain-cards, .story-full-text, .story-full-image, .what-is-intro, .what-is-image, .pillar, .benefit-item, .benefits-image, .number-item, .for-who-item, .for-who-header, .blog-card'
+        '.split-content-inner, .pain-cards, .story-full-text, .story-full-image, .what-is-intro, .what-is-image, .pillar, .benefit-item, .benefits-image, .number-item, .for-who-item, .for-who-header, .blog-card, .faq-item, .faq-header'
     );
 
     sections.forEach(el => el.classList.add('reveal'));
@@ -39,7 +39,7 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
     // Stagger children in grids
-    document.querySelectorAll('.pain-cards, .stories-list, .pillars, .benefits-list, .numbers-grid, .for-who-grid, .blog-grid').forEach(grid => {
+    document.querySelectorAll('.pain-cards, .stories-list, .pillars, .benefits-list, .numbers-grid, .for-who-grid, .blog-grid, .faq-list').forEach(grid => {
         Array.from(grid.children).forEach((child, i) => {
             child.dataset.delay = (i * 0.1).toFixed(1);
         });
@@ -78,6 +78,48 @@
                     const speed = 0.1 + i * 0.05;
                     orb.style.transform = `translateY(${scrollY * speed}px)`;
                 });
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+})();
+
+// ============ STICKY HEADER ============
+(function stickyHeader() {
+    const header = document.getElementById('site-header');
+    if (!header) return;
+
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                header.classList.add('visible');
+            } else {
+                header.classList.remove('visible');
+            }
+        });
+    }, { threshold: 0 });
+
+    observer.observe(hero);
+})();
+
+// ============ SCROLL PROGRESS BAR ============
+(function scrollProgress() {
+    const bar = document.createElement('div');
+    bar.className = 'scroll-progress';
+    document.body.prepend(bar);
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                bar.style.width = progress + '%';
                 ticking = false;
             });
             ticking = true;
