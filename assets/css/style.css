@@ -754,14 +754,30 @@ h2 {
   text-decoration: none;
   color: inherit;
   transition: background 0.3s ease;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
 
 .blog-card:hover {
   background: var(--bg-primary);
+}
+
+.blog-img {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-img img {
+  transform: scale(1.03);
+}
+
+.blog-body {
+  padding: 28px 32px;
 }
 
 .blog-tag {
