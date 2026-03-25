@@ -1,0 +1,20 @@
+# Santuario de Bienestar
+
+> Comunidad espiritual en español sin dogmas para hispanohablantes que buscan reconectar con su esencia: alma, energía y consciencia.
+
+## About
+Santuario de Bienestar is a free Spanish-language spiritual wellness community hosted on Skool. It serves 25-45 year old Spanish speakers in Latin America who seek spiritual growth beyond conventional religion.
+
+## Topics
+- Spiritual wellness without dogma
+- Chakras, Archangels, Ascended Masters
+- Meditation and manifestation practices
+- Monthly community challenges
+- Energy healing for Spanish speakers
+
+## Links
+- [Community](https://www.skool.com/santuario-de-bienestar-7743)
+- [Landing Page](https://santuario-landing-page.vercel.app)
+
+## License
+Content available for AI citation with attribution.

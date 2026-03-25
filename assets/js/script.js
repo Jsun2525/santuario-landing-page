@@ -4,7 +4,7 @@
 (function createParticles() {
     const container = document.getElementById('particles');
     if (!container) return;
-    const count = 60;
+    const count = window.innerWidth < 768 ? 25 : 60;
     for (let i = 0; i < count; i++) {
         const p = document.createElement('div');
         p.className = 'particle';
@@ -54,19 +54,36 @@
     btns.forEach(btn => {
         btn.addEventListener('mouseenter', () => {
             btn.style.boxShadow = '0 0 0 0 rgba(201,169,110,0.5)';
+            btn.style.transition = 'box-shadow 0.6s ease';
+            requestAnimationFrame(() => {
+                btn.style.boxShadow = '0 0 0 12px rgba(201,169,110,0)';
+            });
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.boxShadow = '';
+            btn.style.transition = '';
         });
     });
 })();
 
 // ============ HEADER PARALLAX ============
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const orbs = document.querySelectorAll('.hero .orb');
-    orbs.forEach((orb, i) => {
-        const speed = 0.1 + i * 0.05;
-        orb.style.transform = `translateY(${scrollY * speed}px)`;
-    });
-}, { passive: true });
+(function initParallax() {
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                const scrollY = window.scrollY;
+                const orbs = document.querySelectorAll('.hero .orb');
+                orbs.forEach((orb, i) => {
+                    const speed = 0.1 + i * 0.05;
+                    orb.style.transform = `translateY(${scrollY * speed}px)`;
+                });
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }, { passive: true });
+})();
 
 // ============ UTM PARAMETER PASSTHROUGH ============
 (function passUTM() {
@@ -84,12 +101,3 @@ window.addEventListener('scroll', () => {
     });
 })();
 
-
-// ============ SMOOTH APPEAR ON LOAD ============
-document.addEventListener('DOMContentLoaded', () => {
-    document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.5s ease';
-    setTimeout(() => {
-        document.body.style.opacity = '1';
-    }, 50);
-});

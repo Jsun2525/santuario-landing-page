@@ -11,41 +11,89 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Santuario de Bienestar — Reconecta con tu Esencia" />
   <meta property="og:description" content="Comunidad espiritual sin dogmas para hispanohablantes. Reconecta con tu alma, energía y consciencia." />
-  <meta property="og:image" content="assets/img/og-image.webp" />
-  <meta property="og:url" content="https://santuariodebienestar.com" />
+  <meta property="og:image" content="https://santuario-landing-page.vercel.app/assets/img/og-image.webp" />
+  <meta property="og:url" content="https://santuario-landing-page.vercel.app/" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Santuario de Bienestar — Reconecta con tu Esencia" />
   <meta name="twitter:description" content="Comunidad espiritual sin dogmas para hispanohablantes." />
+  <meta name="twitter:image" content="https://santuario-landing-page.vercel.app/assets/img/og-image.webp" />
+
+  <link rel="canonical" href="https://santuario-landing-page.vercel.app/" />
+
+  <!-- Preload hero poster -->
+  <link rel="preload" href="assets/img/hero-bg.webp" as="image" fetchpriority="high" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" /></noscript>
 
   <!-- Critical CSS inline -->
   <style>
-    :root{--bg-primary:#FFFFFF;--bg-warm:#FAFAF8;--bg-section:#F5F4F1;--gold-lightest:#F5EDE0;--gold-light:#E8D5A3;--gold:#C9A96E;--gold-dark:#A07840;--gold-deep:#6B5228;--purple-lightest:#F4F0FA;--purple-light:#D4C4E8;--purple:#A78BCA;--purple-dark:#6B4F8A;--purple-deep:#3D2B5A;--text-primary:#111111;--text-body:#444444;--text-muted:#888888;--text-on-dark:#FFFFFF;--text-on-dark-muted:rgba(255,255,255,0.7);--border:#E5E5E5;--gradient-hero:linear-gradient(135deg,#2D1B4E 0%,#3D2B5A 40%,#5A3D7A 100%);--gradient-gold:linear-gradient(135deg,#c9a96e,#e8d5a3,#c9a96e);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Inter',system-ui,sans-serif}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--bg-primary);color:var(--text-body);overflow-x:hidden;line-height:1.6}.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:80px 32px}.hero-bg{position:absolute;inset:0;background:var(--gold-lightest);z-index:0}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.15}.orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.2;animation:float 8s ease-in-out infinite}.hero-content{position:relative;z-index:1;text-align:center;max-width:900px}.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 0;border:none;border-radius:0;font-size:.75rem;font-weight:500;color:var(--gold-dark);letter-spacing:.15em;text-transform:uppercase;background:transparent;border-bottom:1px solid var(--gold);margin-bottom:32px;animation:fadeInDown .8s ease both}.hero h1{font-family:var(--font-serif);font-size:clamp(3.5rem,8vw,7.5rem);font-weight:300;line-height:1.05;color:var(--text-primary);margin-bottom:24px;animation:fadeInUp .9s ease .2s both}.hero h1 em{font-style:italic;color:var(--gold-dark)}.hero-subtitle{font-size:clamp(1rem,2.5vw,1.15rem);color:var(--text-body);max-width:560px;margin:0 auto 48px;line-height:1.8;animation:fadeInUp .9s ease .35s both}.cta-btn{display:inline-flex;align-items:center;gap:12px;padding:18px 48px;border:none;border-radius:0;font-family:var(--font-sans);font-size:.85rem;font-weight:600;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;transition:all .3s ease;position:relative;overflow:hidden;animation:fadeInUp .9s ease .5s both}.cta-primary{background:var(--gold);color:#FFFFFF}@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-30px) scale(1.05)}66%{transform:translate(-20px,20px) scale(.95)}}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+    :root{--bg-primary:#FFFFFF;--bg-warm:#FAFAF8;--bg-section:#F5F4F1;--gold-lightest:#F5EDE0;--gold-light:#E8D5A3;--gold:#C9A96E;--gold-dark:#A07840;--gold-deep:#6B5228;--purple-lightest:#F4F0FA;--purple-light:#D4C4E8;--purple:#A78BCA;--purple-dark:#6B4F8A;--purple-deep:#3D2B5A;--text-primary:#111111;--text-body:#444444;--text-muted:#888888;--text-on-dark:#FFFFFF;--text-on-dark-muted:rgba(255,255,255,0.7);--border:#E5E5E5;--gradient-hero:linear-gradient(135deg,#2D1B4E 0%,#3D2B5A 40%,#5A3D7A 100%);--gradient-gold:linear-gradient(135deg,#c9a96e,#e8d5a3,#c9a96e);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Inter',system-ui,sans-serif}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--bg-primary);color:var(--text-body);overflow-x:hidden;line-height:1.6}.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:80px 32px}.hero-bg{position:absolute;inset:0;background:var(--gold-lightest);z-index:0}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.15}.orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.2;animation:float 8s ease-in-out infinite}.hero-content{position:relative;z-index:1;text-align:center;max-width:900px}.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 0;border:none;border-radius:0;font-size:.75rem;font-weight:500;color:var(--gold-dark);letter-spacing:.15em;text-transform:uppercase;background:transparent;border-bottom:1px solid var(--gold);margin-bottom:32px;animation:fadeInDown .8s ease both}.hero h1{font-family:var(--font-serif);font-size:clamp(3.5rem,8vw,7.5rem);font-weight:300;line-height:1.05;color:var(--text-primary);margin-bottom:24px;animation:fadeInUp .9s ease .2s both}.hero h1 em{font-style:italic;color:var(--gold-dark)}.hero-subtitle{font-family:var(--font-serif);font-size:clamp(1rem,2.5vw,1.15rem);color:var(--text-body);max-width:560px;margin:0 auto 48px;line-height:1.8;animation:fadeInUp .9s ease .35s both}.cta-btn{display:inline-flex;align-items:center;gap:12px;padding:18px 48px;border:none;border-radius:0;font-family:var(--font-sans);font-size:.85rem;font-weight:600;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;transition:all .3s ease;position:relative;overflow:hidden;animation:fadeInUp .9s ease .5s both}.cta-primary{background:var(--gold);color:#FFFFFF}@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-30px) scale(1.05)}66%{transform:translate(-20px,20px) scale(.95)}}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
   </style>
 
   <!-- Full stylesheet (non-blocking) -->
   <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="assets/css/style.css" /></noscript>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Santuario de Bienestar",
+      "url": "https://santuario-landing-page.vercel.app",
+      "description": "Comunidad espiritual en español sin dogmas para hispanohablantes que buscan reconectar con su esencia.",
+      "sameAs": ["https://www.skool.com/santuario-de-bienestar-7743"]
+    },
+    {
+      "@type": "WebPage",
+      "name": "Santuario de Bienestar — Reconecta con tu Esencia",
+      "description": "Comunidad espiritual sin dogmas para hispanohablantes. Reconecta con tu alma, energía y consciencia.",
+      "url": "https://santuario-landing-page.vercel.app",
+      "inLanguage": "es",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Santuario de Bienestar",
+        "url": "https://santuario-landing-page.vercel.app"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Pablo M." },
+      "reviewBody": "Fui ateo durante 8 años. En el Santuario aprendí que la espiritualidad no necesita de edificios ni de miedo. Hoy vivo con una claridad que nunca imaginé posible.",
+      "itemReviewed": { "@type": "Organization", "name": "Santuario de Bienestar" }
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Samantha R." },
+      "reviewBody": "El Santuario me enseñó a desaprender para reconectar de verdad. Hoy soy la versión más auténtica de mí misma.",
+      "itemReviewed": { "@type": "Organization", "name": "Santuario de Bienestar" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;">Saltar al contenido</a>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/img/hero-bg.webp">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-bg.webp">
         <source src="assets/video/hero-bg.mp4" type="video/mp4">
       </video>
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-      <div class="particles" id="particles"></div>
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="orb orb-3" aria-hidden="true"></div>
+      <div class="particles" id="particles" aria-hidden="true"></div>
     </div>
     <div class="hero-content">
       <div class="badge">✦ Comunidad Espiritual sin Dogmas</div>
@@ -64,6 +112,8 @@
       <p class="cta-note">Acceso gratuito para miembros fundadores · Sin tarjeta de crédito</p>
     </div>
   </section>
+
+  <main id="main">
 
   <!-- PAIN SECTION -->
   <section class="pain" id="pain">
@@ -95,7 +145,7 @@
         </div>
       </div>
       <div class="split-image">
-        <img src="assets/img/pain-section.webp" alt="Persona reflexionando sobre su camino espiritual" loading="lazy" />
+        <img src="assets/img/pain-section.webp" alt="Persona reflexionando sobre su camino espiritual" loading="lazy" width="800" height="1000" />
       </div>
     </div>
   </section>
@@ -109,7 +159,7 @@
     <div class="stories-list">
       <div class="story-full">
         <div class="story-full-text">
-          <div class="story-quote">"</div>
+          <div class="story-quote" aria-hidden="true">"</div>
           <p>Fui ateo durante 8 años. No por rebeldía, sino porque no encontraba respuestas reales. En el Santuario aprendí que la espiritualidad no necesita de edificios ni de miedo. <strong>Hoy vivo con una claridad que nunca imaginé posible.</strong></p>
           <div class="story-author">
             <div class="story-avatar">
@@ -122,12 +172,12 @@
           </div>
         </div>
         <div class="story-full-image">
-          <img src="assets/img/story-1.webp" alt="Miembro del Santuario meditando" loading="lazy" />
+          <img src="assets/img/story-1.webp" alt="Miembro del Santuario meditando" loading="lazy" width="800" height="520" />
         </div>
       </div>
       <div class="story-full reverse">
         <div class="story-full-text">
-          <div class="story-quote">"</div>
+          <div class="story-quote" aria-hidden="true">"</div>
           <p>Crecí en una familia muy religiosa. Tenía culpa hasta de dudar. El Santuario me enseñó a <strong>desaprender para reconectar de verdad</strong>. Hoy soy la versión más auténtica de mí misma.</p>
           <div class="story-author">
             <div class="story-avatar">
@@ -140,9 +190,21 @@
           </div>
         </div>
         <div class="story-full-image">
-          <img src="assets/img/story-2.webp" alt="Miembro del Santuario en paz" loading="lazy" />
+          <img src="assets/img/story-2.webp" alt="Miembro del Santuario en paz" loading="lazy" width="800" height="520" />
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- MID-PAGE CTA -->
+  <section class="mid-cta">
+    <div class="container" style="text-align:center;padding:80px 32px;">
+      <p style="font-family:var(--font-serif);font-size:1.2rem;font-style:italic;color:var(--text-body);margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;">Tu alma ya sabe que es el momento. Da el primer paso.</p>
+      <a href="https://www.skool.com/santuario-de-bienestar-7743" target="_blank" rel="noopener" class="cta-btn cta-primary">
+        <span>Unirme al Santuario — Es Gratis</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <p class="cta-note">Acceso gratuito · Sin tarjeta de crédito</p>
     </div>
   </section>
 
@@ -150,7 +212,7 @@
   <section class="what-is">
     <div class="what-is-hero">
       <div class="what-is-image">
-        <img src="assets/img/community.webp" alt="Comunidad Santuario de Bienestar" loading="lazy" />
+        <img src="assets/img/community.webp" alt="Comunidad Santuario de Bienestar" loading="lazy" width="1080" height="810" />
       </div>
       <div class="what-is-intro">
         <div class="what-is-badge">✦ La Comunidad</div>
@@ -185,7 +247,7 @@
   <section class="benefits">
     <div class="benefits-split">
       <div class="benefits-image">
-        <img src="assets/img/benefits.webp" alt="Beneficios del Santuario de Bienestar" loading="lazy" />
+        <img src="assets/img/benefits.webp" alt="Beneficios del Santuario de Bienestar" loading="lazy" width="800" height="1200" />
         <div class="benefits-image-overlay">
           <span class="section-label">¿Qué incluye?</span>
           <h2>Todo lo que recibes al unirte</h2>
@@ -336,8 +398,8 @@
   <!-- FINAL CTA -->
   <section class="final-cta">
     <div class="final-cta-bg">
-      <div class="orb orb-f1"></div>
-      <div class="orb orb-f2"></div>
+      <div class="orb orb-f1" aria-hidden="true"></div>
+      <div class="orb orb-f2" aria-hidden="true"></div>
     </div>
     <div class="container">
       <div class="final-cta-content">
@@ -355,6 +417,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
