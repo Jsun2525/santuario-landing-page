@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santuario de Bienestar — Reconecta con tu Esencia</title>
+  <meta name="description" content="¿Sientes un vacío espiritual a pesar de tener todo? Únete al Santuario de Bienestar y redescubre tu alma, energía y consciencia sin dogmas ni religiones." />
+  <meta name="theme-color" content="#FFFFFF" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Santuario de Bienestar — Reconecta con tu Esencia" />
+  <meta property="og:description" content="Comunidad espiritual sin dogmas para hispanohablantes. Reconecta con tu alma, energía y consciencia." />
+  <meta property="og:image" content="assets/img/og-image.webp" />
+  <meta property="og:url" content="https://santuariodebienestar.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Santuario de Bienestar — Reconecta con tu Esencia" />
+  <meta name="twitter:description" content="Comunidad espiritual sin dogmas para hispanohablantes." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Critical CSS inline -->
+  <style>
+    :root{--bg-primary:#FFFFFF;--bg-warm:#FAFAF8;--bg-section:#F5F4F1;--gold-lightest:#F5EDE0;--gold-light:#E8D5A3;--gold:#C9A96E;--gold-dark:#A07840;--gold-deep:#6B5228;--purple-lightest:#F4F0FA;--purple-light:#D4C4E8;--purple:#A78BCA;--purple-dark:#6B4F8A;--purple-deep:#3D2B5A;--text-primary:#111111;--text-body:#444444;--text-muted:#888888;--text-on-dark:#FFFFFF;--text-on-dark-muted:rgba(255,255,255,0.7);--border:#E5E5E5;--gradient-hero:linear-gradient(135deg,#2D1B4E 0%,#3D2B5A 40%,#5A3D7A 100%);--gradient-gold:linear-gradient(135deg,#c9a96e,#e8d5a3,#c9a96e);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Inter',system-ui,sans-serif}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--bg-primary);color:var(--text-body);overflow-x:hidden;line-height:1.6}.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:80px 32px}.hero-bg{position:absolute;inset:0;background:var(--gold-lightest);z-index:0}.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.15}.orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.2;animation:float 8s ease-in-out infinite}.hero-content{position:relative;z-index:1;text-align:center;max-width:900px}.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 0;border:none;border-radius:0;font-size:.75rem;font-weight:500;color:var(--gold-dark);letter-spacing:.15em;text-transform:uppercase;background:transparent;border-bottom:1px solid var(--gold);margin-bottom:32px;animation:fadeInDown .8s ease both}.hero h1{font-family:var(--font-serif);font-size:clamp(3.5rem,8vw,7.5rem);font-weight:300;line-height:1.05;color:var(--text-primary);margin-bottom:24px;animation:fadeInUp .9s ease .2s both}.hero h1 em{font-style:italic;color:var(--gold-dark)}.hero-subtitle{font-size:clamp(1rem,2.5vw,1.15rem);color:var(--text-body);max-width:560px;margin:0 auto 48px;line-height:1.8;animation:fadeInUp .9s ease .35s both}.cta-btn{display:inline-flex;align-items:center;gap:12px;padding:18px 48px;border:none;border-radius:0;font-family:var(--font-sans);font-size:.85rem;font-weight:600;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;transition:all .3s ease;position:relative;overflow:hidden;animation:fadeInUp .9s ease .5s both}.cta-primary{background:var(--gold);color:#FFFFFF}@keyframes float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-30px) scale(1.05)}66%{transform:translate(-20px,20px) scale(.95)}}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+
+  <!-- Full stylesheet (non-blocking) -->
+  <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="assets/css/style.css" /></noscript>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/img/hero-poster.webp">
+        <source src="assets/video/hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="badge">✦ Comunidad Espiritual sin Dogmas</div>
+      <h1>
+        ¿Sientes que algo<br />
+        <em>falta en tu camino?</em>
+      </h1>
+      <p class="hero-subtitle">
+        Tienes éxito, estás bendecido… y aun así hay un vacío que no puedes nombrar. <br />
+        No estás solo. Y hay una razón para eso.
+      </p>
+      <a href="https://www.skool.com/santuario-de-bienestar-7743" target="_blank" rel="noopener" class="cta-btn cta-primary" id="hero-cta">
+        <span>Quiero entrar al Santuario</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <p class="cta-note">Acceso gratuito para miembros fundadores · Sin tarjeta de crédito</p>
+    </div>
+  </section>
+
+  <!-- PAIN SECTION -->
+  <section class="pain" id="pain">
+    <div class="container">
+      <div class="pain-grid">
+        <div class="pain-text">
+          <span class="section-label">¿Te identificas?</span>
+          <h2>El éxito llegó, pero el vacío también</h2>
+          <p>
+            Has trabajado duro, tienes familia, quizás fe… pero de vez en cuando te preguntas: <strong>"¿Es esto todo?"</strong> Esa pregunta no es debilidad. Es tu alma despertando.
+          </p>
+          <p>
+            Millones de personas en Latinoamérica sienten exactamente lo mismo. Crecieron con una religión que no termina de conectar, o simplemente buscan algo más profundo que rituales vacíos.
+          </p>
+        </div>
+        <div class="pain-cards">
+          <div class="pain-card">
+            <div class="pain-icon">😔</div>
+            <p>Te sientes desconectado, aunque tengas todo</p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-icon">🔍</div>
+            <p>Buscas propósito y respuestas que nadie te da</p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-icon">🏛️</div>
+            <p>La religión heredada ya no te llena</p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-icon">⚡</div>
+            <p>Quieres sanar pero no sabes por dónde empezar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES SECTION -->
+  <section class="stories">
+    <div class="container">
+      <span class="section-label centered">Historias reales</span>
+      <h2 class="centered">Ellos también dudaron — hasta que encontraron el Santuario</h2>
+      <div class="stories-grid">
+        <div class="story-card">
+          <div class="story-quote">"</div>
+          <p>
+            Fui ateo durante 8 años. No por rebeldía, sino porque no encontraba respuestas reales. En el Santuario aprendí que la espiritualidad no necesita de edificios ni de miedo. <strong>Hoy vivo con una claridad que nunca imaginé posible.</strong>
+          </p>
+          <div class="story-author">
+            <div class="story-avatar">
+              <img src="assets/img/avatar-pablo.webp" alt="Pablo M. - Miembro del Santuario" loading="lazy" width="56" height="56">
+            </div>
+            <div>
+              <strong>Pablo M.</strong>
+              <span>Medellín, Colombia</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-card featured">
+          <div class="story-quote">"</div>
+          <p>
+            Crecí en una familia muy religiosa. Tenía culpa hasta de dudar. El Santuario me enseñó a <strong>desaprender para reconectar de verdad</strong>. Hoy soy la versión más auténtica de mí misma.
+          </p>
+          <div class="story-author">
+            <div class="story-avatar">
+              <img src="assets/img/avatar-samantha.webp" alt="Samantha R. - Miembro del Santuario" loading="lazy" width="56" height="56">
+            </div>
+            <div>
+              <strong>Samantha R.</strong>
+              <span>Ciudad de México</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS IT -->
+  <section class="what-is">
+    <div class="container">
+      <div class="what-is-inner">
+        <div class="what-is-badge">✦ La Comunidad</div>
+        <h2>El Santuario de Bienestar</h2>
+        <p class="what-is-subtitle">
+          Una comunidad privada en Skool para personas de habla hispana que buscan reconectar con su esencia: alma, energía y consciencia — sin dogmas, sin juicios.
+        </p>
+        <div class="pillars">
+          <div class="pillar">
+            <div class="pillar-icon">🌟</div>
+            <h3>Experiencia</h3>
+            <p>Contenido único diseñado para la comunidad hispana: Chakras, Arcángeles, Maestros Ascendidos y Rayos de Luz.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">⚡</div>
+            <h3>Energía</h3>
+            <p>Un ambiente vibrante y seguro donde cada miembro eleva al otro. Meditaciones, yoga y prácticas de manifestación.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🎯</div>
+            <h3>Ejecución</h3>
+            <p>Retos mensuales con resultados reales: Manifestación, Hábitos, Gratitud e Introspección profunda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="benefits">
+    <div class="container">
+      <span class="section-label centered">¿Qué incluye?</span>
+      <h2 class="centered">Todo lo que recibes al unirte</h2>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-check">✓</div>
+          <div>
+            <h4>Classroom con contenido exclusivo</h4>
+            <p>Módulos educativos sobre espiritualidad, energía y consciencia diseñados para hispanohablantes.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✓</div>
+          <div>
+            <h4>Comunidad activa 24/7</h4>
+            <p>Conecta con cientos de personas en tu mismo camino. Comparte, aprende y crece juntos.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✓</div>
+          <div>
+            <h4>Llamadas en vivo mensuales</h4>
+            <p>Acceso al calendario de eventos para sesiones grupales de meditación, Q&A y workshops en vivo.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✓</div>
+          <div>
+            <h4>Retos transformadores</h4>
+            <p>Manifestación, Hábitos Sagrados, Gratitud e Introspección — retos diseñados para construir tu nueva versión.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✓</div>
+          <div>
+            <h4>Gamificación y premios</h4>
+            <p>Sistema de niveles donde desbloqueas contenido especial. Los más activos ganan libros exclusivos y llamadas 1 a 1.</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-check">✓</div>
+          <div>
+            <h4>Herramientas del Método Tríptico</h4>
+            <p>Aprende "El Arte de Ver a Dios" — un sistema único para conectar con lo divino desde tu propia experiencia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF NUMBERS -->
+  <section class="numbers">
+    <div class="container">
+      <div class="numbers-grid">
+        <div class="number-item">
+          <span class="number">100%</span>
+          <span class="number-label">Contenido en español</span>
+        </div>
+        <div class="number-item">
+          <span class="number">$0</span>
+          <span class="number-label">Para miembros fundadores</span>
+        </div>
+        <div class="number-item">
+          <span class="number">∞</span>
+          <span class="number-label">Comunidad sin dogmas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR WHO -->
+  <section class="for-who">
+    <div class="container">
+      <span class="section-label centered">¿Es para mí?</span>
+      <h2 class="centered">Este espacio es para ti si…</h2>
+      <div class="for-who-list">
+        <div class="for-who-item">
+          <span class="check-circle">✦</span>
+          <p>Tienes entre 25 y 45 años y sientes que hay más para ti en la vida</p>
+        </div>
+        <div class="for-who-item">
+          <span class="check-circle">✦</span>
+          <p>Buscas propósito, sanación y una conexión espiritual auténtica</p>
+        </div>
+        <div class="for-who-item">
+          <span class="check-circle">✦</span>
+          <p>Las religiones convencionales no responden tus preguntas más profundas</p>
+        </div>
+        <div class="for-who-item">
+          <span class="check-circle">✦</span>
+          <p>Quieres crecer junto a una comunidad que te entiende y te eleva</p>
+        </div>
+        <div class="for-who-item">
+          <span class="check-circle">✦</span>
+          <p>Estás listo para convertirte en la mejor versión de ti mismo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog">
+    <div class="container">
+      <span class="section-label centered">Artículos recientes</span>
+      <h2 class="centered">Artículos para tu Camino</h2>
+      <div class="blog-grid">
+        <a href="#" class="blog-card">
+          <span class="blog-tag">Espiritualidad</span>
+          <h3>5 Señales de que tu Alma Está Lista para Despertar</h3>
+          <p>Descubre las señales sutiles que indican que estás listo para un despertar espiritual profundo y transformador.</p>
+          <span class="blog-link">Leer más →</span>
+        </a>
+        <a href="#" class="blog-card">
+          <span class="blog-tag">Energía</span>
+          <h3>Chakras: La Guía Completa para Principiantes</h3>
+          <p>Todo lo que necesitas saber sobre los 7 chakras principales y cómo equilibrarlos para una vida más plena.</p>
+          <span class="blog-link">Leer más →</span>
+        </a>
+        <a href="#" class="blog-card">
+          <span class="blog-tag">Comunidad</span>
+          <h3>Cómo la Meditación Transformó la Vida de Nuestros Miembros</h3>
+          <p>Historias reales de transformación a través de la práctica diaria de meditación dentro del Santuario.</p>
+          <span class="blog-link">Leer más →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="final-cta-bg">
+      <div class="orb orb-f1"></div>
+      <div class="orb orb-f2"></div>
+    </div>
+    <div class="container">
+      <div class="final-cta-content">
+        <div class="cta-badge">✦ Oferta de Fundadores · Plazas Limitadas</div>
+        <h2>Tu transformación comienza hoy</h2>
+        <p>
+          Accede <strong>gratis</strong> al Santuario de Bienestar y únete a una comunidad que te espera.<br />
+          Tu alma ya sabe que es el momento.
+        </p>
+        <a href="https://www.skool.com/santuario-de-bienestar-7743" target="_blank" rel="noopener" class="cta-btn cta-primary cta-large" id="final-cta">
+          <span>Unirme al Santuario — Es Gratis</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <p class="cta-note">Sin compromisos · Sin tarjeta de crédito · Acceso inmediato</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Santuario de Bienestar · Todos los derechos reservados</p>
+      <p class="footer-sub">Esta página fue creada con amor para aquellos que están listos para despertar.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
