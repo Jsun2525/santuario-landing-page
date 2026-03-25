@@ -27,6 +27,10 @@
   --text-on-dark-muted: rgba(255,255,255,0.7);
 
   --border: #E5E5E5;
+  --border-gold: rgba(201,169,110,0.3);
+
+  --radius: 16px;
+  --radius-lg: 24px;
 
   --gradient-hero: linear-gradient(135deg, #2D1B4E 0%, #3D2B5A 40%, #5A3D7A 100%);
   --gradient-gold: linear-gradient(135deg, #c9a96e, #e8d5a3, #c9a96e);
@@ -100,18 +104,18 @@ body {
 
 .orb-1 {
   width: 500px; height: 500px;
-  background: radial-gradient(circle, #a78bca, transparent);
+  background: radial-gradient(circle, var(--gold-light), transparent);
   top: -100px; left: -150px;
 }
 .orb-2 {
   width: 400px; height: 400px;
-  background: radial-gradient(circle, #c9a96e, transparent);
+  background: radial-gradient(circle, var(--gold), transparent);
   bottom: -80px; right: -100px;
   animation-delay: -3s;
 }
 .orb-3 {
   width: 300px; height: 300px;
-  background: radial-gradient(circle, #8B6CAE, transparent);
+  background: radial-gradient(circle, var(--gold-light), transparent);
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   animation-delay: -6s;
@@ -238,7 +242,7 @@ body {
 
 .cta-note {
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.35);
+  color: var(--text-muted);
   margin-top: 20px;
   letter-spacing: 0.06em;
   font-family: var(--font-sans);
@@ -360,7 +364,7 @@ h2 {
 /* ======== STORIES — editorial quotes ======== */
 .stories {
   padding: 140px 0;
-  background: var(--bg-section);
+  background: var(--bg-warm);
 }
 
 .stories h2 {
@@ -461,7 +465,7 @@ h2 {
 /* ======== WHAT IS — editorial centered ======== */
 .what-is {
   padding: 160px 0;
-  background: var(--bg-primary);
+  background: var(--bg-warm);
 }
 
 .what-is-inner {
@@ -518,7 +522,7 @@ h2 {
 }
 
 .pillar {
-  background: var(--bg-primary);
+  background: var(--bg-warm);
   border: none;
   border-radius: 0;
   padding: 48px 40px;
@@ -674,7 +678,7 @@ h2 {
 /* ======== FOR WHO — editorial ======== */
 .for-who {
   padding: 140px 0;
-  background: var(--bg-primary);
+  background: var(--bg-warm);
 }
 
 .for-who h2 {
@@ -883,9 +887,9 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--gold-light);
+  color: var(--gold-dark);
   border: none;
-  border-bottom: 1px solid rgba(201,169,110,0.3);
+  border-bottom: 1px solid var(--border-gold);
   border-radius: 0;
   background: transparent;
   padding: 0 0 12px;
@@ -921,7 +925,7 @@ h2 {
 /* ======== FOOTER ======== */
 .footer {
   padding: 48px 32px;
-  background: var(--bg-primary);
+  background: var(--bg-section);
   border-top: 1px solid var(--border);
   text-align: center;
 }
