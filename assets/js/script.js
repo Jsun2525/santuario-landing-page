@@ -22,7 +22,7 @@
 // ============ SCROLL REVEAL ============
 (function initReveal() {
     const sections = document.querySelectorAll(
-        '.split-content-inner, .pain-cards, .story-full-text, .story-full-image, .pillar, .benefit-item, .number-item, .for-who-item, .what-is-inner, .blog-card'
+        '.split-content-inner, .pain-cards, .story-full-text, .story-full-image, .what-is-intro, .what-is-image, .pillar, .benefit-item, .benefits-image, .number-item, .for-who-item, .for-who-header, .blog-card'
     );
 
     sections.forEach(el => el.classList.add('reveal'));
@@ -39,7 +39,7 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
     // Stagger children in grids
-    document.querySelectorAll('.pain-cards, .stories-list, .pillars, .benefits-grid, .numbers-grid, .for-who-list, .blog-grid').forEach(grid => {
+    document.querySelectorAll('.pain-cards, .stories-list, .pillars, .benefits-list, .numbers-grid, .for-who-grid, .blog-grid').forEach(grid => {
         Array.from(grid.children).forEach((child, i) => {
             child.dataset.delay = (i * 0.1).toFixed(1);
         });
